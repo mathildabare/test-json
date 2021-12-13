@@ -1,0 +1,8 @@
+{
+  "article": [
+    { "id": 1, "title": "Gryffindor Dorm Party", "image_src":"/assets/images/cards/hufflepuffdorm.jpeg" , "description": "mon magnifique event" },
+    { "id": 2, "title": "title 2", "description": "ma super description 2" },
+    { "id": 3, "title": "title 3", "description": "ma super description 3" },
+    { "id": 4, "title": "title 4", "description": "ma super description 4" }
+  ]
+}

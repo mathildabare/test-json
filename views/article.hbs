@@ -1,0 +1,45 @@
+<h2>Article</h2>
+
+<section class="blog container" id="events">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Events</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem earum, sunt omnis consectetur
+        unde quas exercitationem dolores sed doloremque ab aliquid, repellat explicabo id quod magni
+        nobis eligendi non autem veritatis impedit quia ullam
+      </p>
+    </div>
+    <div class="col-md-12">
+      <div class="input-box input-group flex-nowrap py-2">
+        <input class="form-control" type="search" id="search" name="q" aria-label="Search through site content"
+          placeholder=" Search on this website">
+        <button class="btn btn-secondary">Search</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <div class="row">
+
+      {{#each dbArticles}}
+
+      <div class="card" style="width: 18rem;">
+        <img src="{{this.image_src}}" class="card-img-top" alt="" />
+        <div class="card-body">
+          <h5 class="card-title">{{this.title}}</h5>
+          <p class="card-text"> {{this.description}} </p>
+          <a href="/article/{{this.id}}?_method=DELETE" class="btn btn-danger">Delete</a>
+          {{!-- <form action="/article/{{ this.id }}?_method=DELETE" method="post">
+            <button type="submit" class="btn btn-danger">Delete</button> --}}
+          </form>
+        </div>
+      </div>
+
+      {{/each}}
+
+    </div>
+  </div>
+</section>
